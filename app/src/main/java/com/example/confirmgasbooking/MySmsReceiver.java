@@ -47,5 +47,7 @@ public class MySmsReceiver extends BroadcastReceiver {
                 Toast.makeText(context, strMessage, Toast.LENGTH_LONG).show();
             }
         }
+        MainActivity inst = MainActivity.instance();
+        inst.updateInbox(strMessage);
     }
 }
