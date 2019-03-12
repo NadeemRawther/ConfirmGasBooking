@@ -73,7 +73,7 @@ reject = (Button)findViewById(R.id.reject);
                 != PackageManager.PERMISSION_GRANTED) {
             getPermissionToReadSMS();
         } else {
-            smsManager.sendTextMessage("9207419064", null, "Accepted", null, null);
+            smsManager.sendTextMessage("+919207419064", null, "Accepted", null, null);
             Toast.makeText(MainActivity.this, "Message sent!", Toast.LENGTH_SHORT).show();
         }
         sendsms.setVisibility(View.INVISIBLE);
@@ -154,7 +154,7 @@ reject = (Button)findViewById(R.id.reject);
         acceptbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                smsManager.sendTextMessage("9207419064", null, "Accepted", null, null);
+                smsManager.sendTextMessage("+919207419064", null, "Accepted", null, null);
                 Toast.makeText(MainActivity.this, "Message sent!", Toast.LENGTH_SHORT).show();
             }
         });
